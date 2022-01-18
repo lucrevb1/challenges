@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.card {
+  height: max-content;
+  padding: 1.5rem;
+  &--preview {
+    background-color: hsl(216, 50%, 16%);
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}

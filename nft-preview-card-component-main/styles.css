@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0d192b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.card {
+  height: max-content;
+  padding: 1.5rem;
+}
+.card--preview {
+  background-color: #14253d;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
