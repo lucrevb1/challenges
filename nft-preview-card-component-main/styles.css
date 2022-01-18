@@ -14,14 +14,113 @@ body {
   align-items: center;
   margin: 0;
   padding: 1.5rem;
+  color: #8bacda;
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #00fff7;
 }
 
 .card {
   height: max-content;
+  width: 100%;
+  max-width: 21.875rem;
   padding: 1.5rem;
+  border-radius: 0.5rem;
 }
 .card--preview {
   background-color: #14253d;
+}
+.card .preview__image {
+  border-radius: 0.5rem;
+  position: relative;
+}
+.card .preview__image:hover::before, .card .preview__image:hover::after {
+  content: "";
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+.card .preview__image:hover::before {
+  z-index: 1;
+  background-color: #00fff7;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0.5;
+}
+.card .preview__image:hover::after {
+  z-index: 2;
+  margin: auto;
+  background-image: url(images/icon-view.svg);
+  background-position: center;
+  width: 3rem;
+  height: 1.875rem;
+}
+.card .preview__image img {
+  display: block;
+  border-radius: inherit;
+  max-width: 18.875rem;
+  width: 100%;
+  cursor: pointer;
+}
+.card h3 {
+  font-size: 1.25rem;
+}
+.card .sale-details {
+  display: flex;
+  justify-content: space-between;
+}
+.card .sale-details .value,
+.card .sale-details .time-left {
+  display: inherit;
+  align-items: center;
+}
+.card .sale-details .value::before,
+.card .sale-details .time-left::before {
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1.375rem;
+  vertical-align: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.3125rem;
+}
+.card .sale-details .value {
+  color: #00fff7;
+}
+.card .sale-details .value::before {
+  background-image: url(images/icon-ethereum.svg);
+}
+.card .sale-details .time-left::before {
+  background-image: url(images/icon-clock.svg);
+}
+.card hr {
+  margin: 0.9375rem 0;
+  border: 0;
+  background-color: #2f415b;
+  height: 1px;
+}
+.card .creator-info {
+  line-height: 2.0625rem;
+  vertical-align: middle;
+}
+.card .creator-info img {
+  vertical-align: middle;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  margin-right: 1rem;
 }
 
 .attribution {

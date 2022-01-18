@@ -8,6 +8,10 @@
 
   <link rel="stylesheet" href="styles.css">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,16 +23,20 @@
 <body>
 
   <div class="card card--preview">
-    <img src="#" alt="Equilibrium #3429 | Creation of Jules Wyvern">
-    <h3>Equilibrium #3429</h3>
+    <div class="preview__image">
+      <img src="images/image-equilibrium.jpg" alt="Equilibrium #3429 | Creation of Jules Wyvern">
+    </div>
+    <h3><a href="#">Equilibrium #3429</a></h3>
 
     <p>Our Equilibrium collection promotes balance and calm.</p>
 
-    0.041 ETH
-    3 days left
+    <div class="sale-details">
+      <span class="value">0.041 ETH</span>
+      <span class="time-left">3 days left</span>
+    </div>
     
     <hr>
-    Creation of Jules Wyvern
+    <span class="creator-info"><img src="images/image-avatar.png" alt="Jules Wyvern">Creation of <a href="#">Jules Wyvern</a></span>
   </div>
 
   <div class="attribution">
