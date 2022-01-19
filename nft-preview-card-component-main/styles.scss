@@ -154,6 +154,8 @@ a {
     line-height: 2.0625rem;
     vertical-align: middle;
     img {
+      border-radius: 50%;
+      border: 1px solid $white;
       vertical-align: middle;
       width: 2.0625rem;
       height: 2.0625rem;
