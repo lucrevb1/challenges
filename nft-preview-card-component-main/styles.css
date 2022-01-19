@@ -20,6 +20,7 @@ body {
 
 p {
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 a {
@@ -85,8 +86,12 @@ a:hover {
   max-width: 18.875rem;
   width: 100%;
 }
-.card h3 {
-  font-size: 1.25rem;
+.card h1 {
+  font-size: 1.375rem;
+  margin: 1rem 0;
+}
+.card p {
+  margin: 1rem 0;
 }
 .card .sale-details {
   display: flex;
