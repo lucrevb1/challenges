@@ -3,6 +3,10 @@
 // Font
 $outfit: 'Outfit', sans-serif;
 
+// Colours
+$mainBG: hsl(217, 54%, 11%);
+$cardBG: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 $softBlue: hsl(215, 51%, 70%);
 $cyan: hsl(178, 100%, 50%);
@@ -18,7 +22,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: hsl(217, 54%, 11%);
+  background-color: $mainBG;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +53,7 @@ a {
   padding: 1.5rem;
   border-radius: .5rem;
   &--preview {
-    background-color: hsl(216, 50%, 16%);
+    background-color: $cardBG;
   }
 
   .preview__image {
@@ -142,7 +146,7 @@ a {
   hr {
     margin: 0.9375rem 0;
     border: 0;
-    background-color: hsl(215, 32%, 27%);
+    background-color: $line;
     height: 1px;
   }
 
@@ -159,7 +163,7 @@ a {
 }
 
 .attribution {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   font-size: 0.6875rem; 
   text-align: center;
