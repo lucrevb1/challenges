@@ -1,0 +1,86 @@
+.theme1 {
+  --main-bg: hsl(222, 26%, 31%);
+  --keypad-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --key-bg: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --alt-key-bg: hsl(6, 63%, 50%);
+  --alt-key-shadow: hsl(6, 70%, 34%);
+  --alt2-key-bg: hsl(225, 21%, 49%);
+  --alt2-key-shadow: hsl(224, 28%, 35%);
+  --dark-text: hsl(221, 14%, 31%);
+  --light-text: hsl(0, 0, 100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg, #3a4764);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 1.5rem 2.875rem;
+  color: #8bacda;
+  font-size: 2rem;
+  font-family: "Spartan", sans-serif;
+}
+
+.main {
+  height: max-content;
+  width: 100%;
+  max-width: 25rem;
+  padding: 0.5rem;
+}
+
+.calc__display {
+  background-color: var(--screen-bg);
+  border-radius: 0.5rem;
+  color: var(--light-text);
+  text-align: right;
+  padding: 1rem;
+}
+.calc__keypad {
+  background-color: var(--keypad-bg);
+  border-radius: 0.5rem;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.calc__keypad button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--key-bg);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem var(--key-shadow);
+  font-size: 2rem;
+  color: var(--dark-text);
+  font-family: inherit;
+  line-height: 2.5rem;
+  display: table-cell;
+}
+.calc__keypad button.span1-2 {
+  grid-column: 1/span 2;
+}
+.calc__keypad button.span3-4 {
+  grid-column: 3/span 2;
+}
+
+/* Attribution */
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 0.6875rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
